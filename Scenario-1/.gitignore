@@ -1,4 +1,11 @@
-.terraform
+# Terraform files
+.terraform/
 *.tfstate
-*.tfstate.backup
+*.tfstate.*
 .terraform.lock.hcl
+
+# Sensitive files
+*.tfvars
+
+# OS files
+.DS_Store

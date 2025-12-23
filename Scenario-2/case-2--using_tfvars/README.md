@@ -26,7 +26,7 @@ scenario-2/
     qa.tfvars
     prod.tfvars
 ```
-**Note:** *.tfvars* files are intentionally not committed, as they may contain sensitive values.
+Note:*.tfvars* files are intentionally not committed, as they may contain sensitive values.
 Please refer to *terraform.tfvars.example* to understand how variables are declared and used.
 ---
 
@@ -44,8 +44,8 @@ terraform init
 
 ```bash
 terraform plan -var-file=dev.tfvars
-terraform plan -var=qa.tfvars
-terraform plan -var=prod.tfvars
+terraform plan -var-file=qa.tfvars
+terraform plan -var-file=prod.tfvars
 ```
 
 ---
@@ -54,8 +54,8 @@ terraform plan -var=prod.tfvars
 
 ```bash
 terraform apply -var-file=dev.tfvars
-terraform apply -var=qa.tfvars
-terraform apply -var=prod.tfvars
+terraform apply -var-file=qa.tfvars
+terraform apply -var-file=prod.tfvars
 ```
 
 ---
@@ -64,8 +64,8 @@ terraform apply -var=prod.tfvars
 
 ```bash
 terraform destroy -var-file=dev.tfvars
-terraform destroy -var=qa.tfvars
-terraform destroy -var=prod.tfvars
+terraform destroy -var-file=qa.tfvars
+terraform destroy -var-file=prod.tfvars
 ```
 ---
 
@@ -87,7 +87,7 @@ Terraform dynamically assigns these values based on conditional logic — **no r
 Running:
 
 ```bash
-terraform apply -var="environment=prod"
+terraform apply -var-file="environment=prod"
 ```
 
 Terraform correctly produced:

@@ -29,6 +29,7 @@ scenario-2/
 
 Note: .tfvars files are intentionally not committed, as they may contain sensitive values.
 Please refer to terraform.tfvars.example to understand how variables are declared and used.
+
 ---
 
 # **Steps to Run the Project**

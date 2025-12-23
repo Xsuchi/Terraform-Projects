@@ -1,6 +1,6 @@
 # Terraform Projects – Real-World Scenarios
 
-This repository contains real-world, production-style Terraform scenarios
+This repository contains **real-world, production-style Terraform projects**
 focused on AWS infrastructure, security, state management, and automation.
 
 ---
@@ -13,3 +13,17 @@ focused on AWS infrastructure, security, state management, and automation.
 - Uses Terraform variables, locals, and conditional expressions
 
 📁 Folder: `Scenario-1/`
+
+---
+
+### Scenario 2: Multi-Environment Infrastructure (dev / qa / prod)
+
+- Provisions isolated dev, qa, and prod environments
+- Environment-specific AMIs, instance types, and tags
+- All instances deployed in private subnets
+- Multiple implementation approaches included:
+  - locals
+  - tfvars
+  - modules (recommended)
+
+📁 Folder: `scenario-2/`

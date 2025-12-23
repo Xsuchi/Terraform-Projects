@@ -26,8 +26,8 @@ scenario-2/
     qa.tfvars
     prod.tfvars
 ```
-**tfvars files should normally NOT be committed** because they may contain secrets.
-> In this scenario, our tfvars only contain environment names, so it is safe.
+**Note:** *.tfvars* files are intentionally not committed, as they may contain sensitive values.
+Please refer to *terraform.tfvars.example* to understand how variables are declared and used.
 ---
 
 # **Steps to Run the Project**
@@ -126,19 +126,6 @@ Terraform correctly produced:
 ### **Output**
 
 ![output](img/image-6.png)
-
----
-
-### **State Validation via CLI**
-
-You can confirm values using:
-
-```bash
-terraform state list
-terraform state show aws_instance.auto_ec2
-```
-
-![state](img/image-7.png)
 
 ---
 

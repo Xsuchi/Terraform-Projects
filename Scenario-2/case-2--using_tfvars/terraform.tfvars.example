@@ -1,0 +1,14 @@
+environment = "dev"
+vpc_id      = "default"
+instance_type = "t2.medium"
+  #instance ami 
+ami = "ami-068c0051b15cdb816" # Amazon Linux 2 AMI -ami-068c0051b15cdb816 or ubuntu ami - ami-0ecb62995f68bb549
+  
+  #instance ebs volume size
+volume_size = 8
+  #tags common to all resources
+common_tags = {
+    project     = "Terraform-Project"
+    Environment = "dev-server"
+    author      = "Suchi"
+  }

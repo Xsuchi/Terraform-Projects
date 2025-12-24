@@ -41,21 +41,23 @@ resource "aws_iam_role" "ec2_role" {
 
 # IAM policy to allow S3 access
 
-data "aws_iam_policy_document" "s3_acces" {
+data "aws_iam_policy_document" "s3_access" {
   statement {
-    actions = [
-      "s3:ListBucket",
-      "s3:GetObject",
-      "s3:PutObject"
-    ]
+    actions   = ["s3:ListBucket"]
+    resources = [data.aws_s3_bucket.existing_bucket.arn]
+  }
+
+  statement {
+    actions = ["s3:GetObject", "s3:PutObject"]
     resources = ["${data.aws_s3_bucket.existing_bucket.arn}/*"]
   }
 }
 
-resource "aws_iam_role_policy" "s3_access_attach" {
-  role   = aws_iam_role.ec2_role.name
-  policy = data.aws_iam_policy_document.s3_acces.json
+resource "aws_iam_role_policy" "attach" {
+  role   = aws_iam_role.ec2_role.id
+  policy = data.aws_iam_policy_document.s3_access.json
 }
+
 
 # instance profile to attach role to EC2
 # instance cannot attach a role directly, it can only attach an instance profile.

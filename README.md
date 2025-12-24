@@ -27,3 +27,19 @@ focused on AWS infrastructure, security, state management, and automation.
   - modules (recommended)
 
 📁 Folder: `scenario-2/`
+
+---
+
+### Scenario 3: Secure EC2 → S3 Access using IAM Roles (Import-Based)
+
+- Imported existing EC2 and S3 resources into Terraform
+- Implemented IAM Role + Instance Profile for EC2
+- Enforced least-privilege S3 access
+- Restricted bucket access to ONLY the EC2 IAM role
+- Followed AWS-recommended IAM-based access model (no access keys)
+
+📁 Folder: `scenario-3/`
+
+---
+
+

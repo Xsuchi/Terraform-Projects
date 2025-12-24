@@ -154,18 +154,14 @@ Once done:
 
 ![alt text](img/image-3.png)
 
-2. IAM Policy
-
-![alt text](img/image-4.png)
-
-3. IAM Instance Profile
+2. IAM Instance Profile
 
 ![alt text](img/image-5.png)
 
-4. S3 Bucket Policy
+3. S3 Bucket Policy
 ![alt text](img/image-2.png)
 
-5. validation
+4. validation
 
 ![alt text](img/image-6.png)
 

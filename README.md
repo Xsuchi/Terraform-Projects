@@ -42,4 +42,13 @@ focused on AWS infrastructure, security, state management, and automation.
 
 ---
 
+### Scenario 4: Create AMI from Existing EC2 Instance
 
+- Imported an existing EC2 instance into Terraform
+- Created a reusable AMI (Golden AMI pattern)
+- Launched a new EC2 instance using the custom AMI
+- Ensured user_data execution by cleaning cloud-init state
+
+📁 Folder: `scenario-4/`
+
+---

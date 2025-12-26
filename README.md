@@ -52,3 +52,41 @@ focused on AWS infrastructure, security, state management, and automation.
 📁 Folder: `scenario-4/`
 
 ---
+
+### Scenario 5: Import Existing S3 Bucket into Terraform
+
+- Imported manually created S3 bucket into Terraform state
+- Extracted bucket ARN for documentation and reuse
+- Managed brownfield infrastructure safely without recreation
+
+📁 Folder: `scenario-5/`
+
+---
+
+### Scenario 6: IAM User Access Control Based on Environment (Dev / QA / Prod)
+
+- Implemented environment-based IAM access using groups and policies
+- Enforced least-privilege permissions at group level
+- Created IAM users and automatically mapped them to environment-specific groups
+- Dynamically generated IAM policies using conditional logic
+- Ensured zero manual permission handling
+
+**Access Model:**
+
+- Dev → EC2 read-only + S3 read/write
+- QA → EC2 + S3 read-only
+- Prod → Restricted EC2 access (no delete permissions)
+
+📁 Folder: `scenario-6/`
+
+---
+
+## 📫 Connect with Me
+
+**Suchith S**
+Cloud & DevOps Engineer
+
+🔗 LinkedIn: [https://www.linkedin.com/in/suchith-s-a96208253](https://www.linkedin.com/in/suchith-s-a96208253)
+📂 GitHub: (this repo)
+
+---

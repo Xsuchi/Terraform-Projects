@@ -1,0 +1,3 @@
+environment = "user"
+bucket_name = "test-buck3t-456sddfsd"
+user        = "test-user"

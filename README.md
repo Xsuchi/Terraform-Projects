@@ -81,6 +81,32 @@ focused on AWS infrastructure, security, state management, and automation.
 
 ---
 
+### 🔹 Scenario 7: Restrict IAM User Access to a Single S3 Bucket
+
+- Restricted an IAM user to access ONLY one specific S3 bucket
+- Prevented visibility and access to all other buckets
+- Enforced resource-level IAM permissions using bucket and object ARNs
+
+📁 Folder: `scenario-7/`
+
+---
+
+### 🔹 Scenario 8: Prevent Accidental Deletion of S3 Resources
+
+- Protected critical S3 buckets from accidental deletion
+- Enabled S3 versioning for object-level recovery
+- Applied Terraform lifecycle protection (`prevent_destroy`)
+- Configured lifecycle rules for non-current object versions
+- Implemented IAM group-based access control:
+  - Admin group → Full access
+  - User group → Restricted access
+
+**Key focus:** Data protection and production safety
+
+📁 Folder: `scenario-8/`
+
+---
+
 ## 📫 Connect with Me
 
 **Suchith S**

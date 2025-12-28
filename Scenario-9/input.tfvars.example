@@ -1,0 +1,7 @@
+instance_ami  = "enter ec2 ami id"
+instance_type = "enter the instance type you needed"
+instance_name = "enter instance name"
+volume_size   = 10 #add disksize
+vpc_id        = "enter vpc-id"
+subnet_id     = "enter the subnet id"
+

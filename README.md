@@ -107,6 +107,21 @@ focused on AWS infrastructure, security, state management, and automation.
 
 ---
 
+### 🔹 Scenario 9: Automate Container Deployment on EC2
+
+- Provisioned an EC2 instance using Terraform
+- Automated application deployment using EC2 user data
+- Installed Docker during instance boot
+- Pulled a Docker image from Docker Hub automatically
+- Ran the container on startup and exposed the application via port 80
+- Configured security groups to allow HTTP traffic
+
+**Key focus:** Combining infrastructure provisioning with application bootstrap using Terraform and cloud-init.
+
+📁 Folder: `scenario-9/`
+
+---
+
 ## 📫 Connect with Me
 
 **Suchith S**

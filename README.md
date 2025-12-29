@@ -122,6 +122,26 @@ focused on AWS infrastructure, security, state management, and automation.
 
 ---
 
+### 🔹 Scenario 10: Custom VPC Deployment (Public & Private Subnets)
+
+- Designed and deployed a custom VPC using Terraform
+- Created separate public and private subnets for workload isolation
+- Attached an Internet Gateway (IGW) to the public subnet
+- Deployed a NAT Gateway inside the public subnet
+- Configured route tables:
+  - Public subnet routes traffic via Internet Gateway
+  - Private subnet routes outbound traffic via NAT Gateway
+- Launched EC2 instances:
+  - Public EC2 with public IP
+  - Private EC2 without public IP
+- Ensured private instances have outbound-only internet access
+
+**Key focus:** Secure VPC design, network isolation, and controlled internet access following AWS best practices.
+
+📁 Folder: `scenario-10/`
+
+---
+
 ## 📫 Connect with Me
 
 **Suchith S**

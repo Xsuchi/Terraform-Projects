@@ -1,0 +1,19 @@
+/*
+region                = "<enter the region>"
+vpc_cidr_block        = "<enter the vpc cidr block>"
+tag_name              = "<enter the tag name>"
+azs                   = "<["enter the value az-1", "enter the value az-1"]>"
+private_instance_ami  = "<enter the instance ami id>"
+public_instance_ami   = "<enter the instance ami id>"
+private_instance_type = "<enter the instance type>"
+public_instance_type  = "<enter the instance type>" */
+
+
+region                = "us-east-1"
+vpc_cidr_block        = "10.0.0.0/16"
+tag_name              = "app"
+azs                   = ["us-east-1a", "us-east-1b"]
+private_instance_ami  = "ami-068c0051b15cdb816"
+public_instance_ami   = "ami-068c0051b15cdb816"
+private_instance_type = "t2.micro"
+public_instance_type  = "t2.micro"

@@ -142,6 +142,26 @@ focused on AWS infrastructure, security, state management, and automation.
 
 ---
 
+### 🔹 Scenario 11: Highly Available Web Application on AWS (ALB + ASG + HTTPS)
+
+- Designed and deployed a highly available web application architecture using Terraform
+- Created a secure multi-tier setup inside a custom VPC
+- Used public subnets for Application Load Balancer (ALB)
+- Used private subnets for EC2 instances (no public IPs)
+- Implemented Auto Scaling Group (ASG) for high availability and self-healing
+- Deployed Dockerized web application using EC2 user data
+- Configured ALB target groups with health checks
+- Enabled HTTPS using ACM (SSL certificate) with Route53 DNS validation
+- Redirected HTTP (80) traffic to HTTPS (443)
+- Used IAM role with SSM access for EC2 management
+- Ensured outbound-only internet access for private instances using NAT Gateway
+
+**Key focus:** High availability, scalability, security, and production-ready AWS architecture using Terraform.
+
+📁 Folder: `scenario-11/`
+
+---
+
 ## 📫 Connect with Me
 
 **Suchith S**

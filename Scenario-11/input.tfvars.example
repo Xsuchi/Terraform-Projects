@@ -1,0 +1,29 @@
+/* region         = "us-east-1"
+tag_name       = "app"
+vpc_cidr_block = "10.0.0.0/16"
+azs            = ["us-east-1a", "us-east-1b"]
+
+ami_id        = "ami-068c0051b15cdb816"
+instance_type = "t2.micro"
+
+desired_capacity = 2
+min_size         = 1
+max_size         = 3
+
+domain_name    = "mycafe.xxiiyos.xyz"
+hosted_zone_id = "abvhgfdhgggffdrtyt" */
+
+region         = "<enter the value of the region>"
+tag_name       = "<enter the name you want to deploy the resources"
+vpc_cidr_block = "<enter the vpc cidr value>"
+azs            = "<["enter the value az-1", "enter the value az-1"]>"
+
+ami_id        = "<enter the instance ami id>"
+instance_type = "<enter the instance type>"
+
+desired_capacity = "<enter the desired capacity>"
+min_size         = "enter the min instance needed"
+max_size         = "enter the max instance needed"
+
+domain_name    = "enter your domain name"
+hosted_zone_id = "enter your hosted zone id"

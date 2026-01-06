@@ -162,6 +162,27 @@ focused on AWS infrastructure, security, state management, and automation.
 
 ---
 
+### 🔹 Scenario 12: Secure EC2 Access with Local SSH Keys & Remote Terraform State
+
+- Implemented secure EC2 access using locally generated SSH key pairs
+- Generated SSH keys locally using Terraform TLS provider
+- Uploaded only the public key to AWS (private key never leaves local machine)
+- Launched EC2 instance in a private subnet with no public IP
+- Disabled inbound SSH access completely
+- Enabled secure access via AWS Systems Manager (SSM) Session Manager
+- Configured remote Terraform backend using S3 for state storage
+- Enabled state locking using DynamoDB to prevent concurrent state corruption
+- Implemented Terraform workspaces for dev / qa / prod environment isolation
+- Ensured separate state files per environment
+- Followed Terraform collaboration and security best practices
+
+**Key focus:** Secure access, state management, environment isolation, and team-safe Terraform workflows.
+
+📁 Folder: `scenario-12/`
+
+---
+
+
 ## 📫 Connect with Me
 
 **Suchith S**

@@ -1,0 +1,26 @@
+/*
+region        = "us-east-1"
+vpc_cidr_block        = "10.0.0.0/16"
+azs                   = ["us-east-1a", "us-east-1b"]
+path          = "/d/GitHub/Terraform/Project/Scenario-12/key"
+environment   = "prod"
+instance_type = "t2.medium"
+ami_id        = "ami-068c0051b15cdb816"
+tags = {
+  project     = "Terraform-Project"
+  Environment = "dev"
+  author      = "Suchith"
+} */
+
+region        = "<enter the region>"
+vpc_cidr_block        = "<enter vpc cidr block>"
+azs                   = "<["enter the value az-1", "enter the value az-1"]>"
+path          = "enter the path where you want to store private key"
+environment   = "enter the value of environment"
+instance_type = "<enter the instance type>"
+ami_id        = "<enter the instance ami id>"
+tags = {
+  project     = "Terraform-Project"
+  Environment = "dev"
+  author      = "Suchith"
+} 

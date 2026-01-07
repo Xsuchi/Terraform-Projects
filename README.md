@@ -182,6 +182,23 @@ focused on AWS infrastructure, security, state management, and automation.
 
 ---
 
+### 🔹 Scenario 13: Migrate Local Terraform State to Terraform Cloud
+
+- Migrated an existing Terraform project from **local state** to **Terraform Cloud**
+- Performed state migration **without destroying or recreating resources**
+- Updated backend configuration to use Terraform Cloud workspace
+- Authenticated securely using Terraform Cloud API token
+- Ensured Terraform Cloud becomes the **single source of truth**
+- Verified remote state using `terraform show` and `terraform state list`
+- Configured AWS credentials securely in Terraform Cloud workspace variables
+- Enabled built-in **state locking, history, and collaboration**
+
+**Key focus:** Safe state migration, zero downtime, and production-grade Terraform state management.
+
+📁 Folder: `scenario-13/`
+
+---
+
 
 ## 📫 Connect with Me
 

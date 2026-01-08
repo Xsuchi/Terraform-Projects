@@ -199,6 +199,23 @@ focused on AWS infrastructure, security, state management, and automation.
 
 ---
 
+### 🔹 Scenario 14: Enforce Terraform Cloud–Only Execution with Workspace-Based Infrastructure & Slack Alerts
+
+- Centralized Terraform **state and execution** fully in Terraform Cloud
+- Enforced **remote-only execution** (no local apply or destroy)
+- Prevented usage of **local AWS credentials and local state files**
+- Implemented workspace-based infrastructure behavior (`dev`, `qa`, `prod`)
+- Dynamically adjusted EC2 configuration using `terraform.workspace` and conditionals
+- Stored all sensitive variables securely in Terraform Cloud
+- Enabled full audit trail and controlled execution
+- Integrated **Slack notifications** for Terraform run success, failure, and destroy events
+- Built a team-safe, enterprise-grade Terraform workflow
+
+**Key focus:** Secure remote execution, workspace isolation, controlled deployments, and real-time visibility.
+
+📁 Folder: `scenario-14/`
+
+---
 
 ## 📫 Connect with Me
 

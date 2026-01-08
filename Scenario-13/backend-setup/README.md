@@ -30,15 +30,15 @@ It is intended as a **reference guide** for anyone using this repository.
 Each workspace maintains a **separate remote state file**.
 
 ## example
-![organization](image-1.png)
+![organization](img/image-1.png)
 
-![project](image-2.png)
+![project](img/image-2.png)
 
-![workspace](image-3.png)
+![workspace](img/image-3.png)
 
-![cli-driven workflow](image-4.png)
+![cli-driven workflow](img/image-4.png)
 
-![alt text](image-5.png)
+![alt text](img/image-5.png)
 ---
 
 ## Task 2: Login from Terraform CLI
@@ -56,8 +56,8 @@ Steps:
 3. Generate and copy the **API token**
 4. Paste it back into the CLI
 
-![alt text](image-6.png)
-![alt text](image-7.png)
+![alt text](img/image-6.png)
+![alt text](img/image-7.png)
 
 Terraform stores the credentials locally at:
 
@@ -72,7 +72,7 @@ Terraform stores the credentials locally at:
   ```
   %APPDATA%\terraform.d\credentials.tfrc.json
   ```
-![alt text](image.png)
+![alt text](img/image.png)
 ---
 
 ## Task 3: Configure Terraform Cloud Backend in Code
